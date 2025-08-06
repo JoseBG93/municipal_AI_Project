@@ -1,0 +1,169 @@
+[
+  {
+    "tipo_deteccion": "diferencia_temporal_sospechosa",
+    "descripcion": "Inmueble vendido por valor muy inferior al de compra reciente",
+    "inmueble": {
+      "referencia_catastral": "1234567YJ4513S1000XX",
+      "direccion": "Calle Constitución 125, Alfafar, 46910",
+      "superficie": 95.5,
+      "tipo": "vivienda"
+    },
+    "escritura_compra": {
+      "fecha_documento": "2022-03-15",
+      "numero_protocolo": "P1205/2022",
+      "valor_declarado": 185000,
+      "notario": "Dr. Ana López Sánchez",
+      "comprador": "Juan Pérez García"
+    },
+    "escritura_venta": {
+      "fecha_documento": "2024-11-20", 
+      "numero_protocolo": "P8934/2024",
+      "valor_declarado": 110000,
+      "notario": "Dr. Pedro Martínez Ruiz",
+      "vendedor": "Juan Pérez García"
+    },
+    "analisis": {
+      "diferencia_absoluta": -75000,
+      "diferencia_porcentual": -40.54,
+      "tiempo_transcurrido_meses": 32,
+      "nivel_sospecha": "ALTO",
+      "motivos_alerta": [
+        "diferencia_superior_30_porciento",
+        "periodo_corto_entre_transacciones",
+        "posible_infravaloración",
+        "mercado_inmobiliario_al_alza"
+      ]
+    },
+    "acciones_recomendadas": [
+      "verificar_valor_catastral_actual",
+      "consultar_precios_zona",
+      "solicitar_tasación_independiente",
+      "revisar_vínculos_familiares_partes"
+    ]
+  },
+  {
+    "tipo_deteccion": "patron_evasion_recurrente",
+    "descripcion": "Contribuyente con historial de infravaloraciones",
+    "inmueble": {
+      "referencia_catastral": "9876543YJ4513S2000XX",
+      "direccion": "Avenida Valencia 78, Alfafar, 46910",
+      "superficie": 120.3,
+      "tipo": "vivienda"
+    },
+    "escritura_compra": {
+      "fecha_documento": "2020-07-10",
+      "numero_protocolo": "P3456/2020",
+      "valor_declarado": 165000,
+      "notario": "Dr. María González López",
+      "comprador": "Carlos Rodríguez Martín"
+    },
+    "escritura_venta": {
+      "fecha_documento": "2024-09-05",
+      "numero_protocolo": "P7721/2024", 
+      "valor_declarado": 125000,
+      "notario": "Dr. Juan Pérez García",
+      "vendedor": "Carlos Rodríguez Martín"
+    },
+    "analisis": {
+      "diferencia_absoluta": -40000,
+      "diferencia_porcentual": -24.24,
+      "tiempo_transcurrido_meses": 50,
+      "nivel_sospecha": "MEDIO",
+      "historial_contribuyente": {
+        "infracciones_previas": 2,
+        "escrituras_sospechosas": 3,
+        "sancionado_anteriormente": true
+      }
+    },
+    "contexto_mercado": {
+      "incremento_precios_zona": "+15%",
+      "valor_catastral_actual": 178000,
+      "precio_medio_m2_zona": 1580
+    }
+  },
+  {
+    "tipo_deteccion": "diferencia_extrema_familiar",
+    "descripcion": "Venta entre familiares con valor muy por debajo del mercado",
+    "inmueble": {
+      "referencia_catastral": "5555444YJ4513S3000XX",
+      "direccion": "Plaza España 45, Alfafar, 46910",
+      "superficie": 85.0,
+      "tipo": "vivienda"
+    },
+    "escritura_compra": {
+      "fecha_documento": "2021-05-20",
+      "numero_protocolo": "P2890/2021",
+      "valor_declarado": 195000,
+      "notario": "Dr. Ana López Sánchez",
+      "comprador": "María González López"
+    },
+    "escritura_venta": {
+      "fecha_documento": "2024-12-01",
+      "numero_protocolo": "P9123/2024",
+      "valor_declarado": 95000,
+      "notario": "Dr. Pedro Martínez Ruiz",
+      "vendedor": "María González López",
+      "comprador": "Ana González Ruiz (hija)"
+    },
+    "analisis": {
+      "diferencia_absoluta": -100000,
+      "diferencia_porcentual": -51.28,
+      "tiempo_transcurrido_meses": 42,
+      "nivel_sospecha": "MUY_ALTO",
+      "relacion_familiar": "madre_hija",
+      "motivos_alerta": [
+        "diferencia_superior_50_porciento",
+        "venta_entre_familiares",
+        "posible_simulacion_precio",
+        "evasion_impuesto_donaciones"
+      ]
+    },
+    "investigacion_adicional": {
+      "verificar_precio_donacion": true,
+      "calcular_isd_evadido": true,
+      "revisar_otras_propiedades_familia": true
+    }
+  },
+  {
+    "tipo_deteccion": "caso_limite_aceptable",
+    "descripcion": "Diferencia justificada por circunstancias especiales",
+    "inmueble": {
+      "referencia_catastral": "7777888YJ4513S4000XX",
+      "direccion": "Calle Mayor 134, Alfafar, 46910",
+      "superficie": 110.5,
+      "tipo": "vivienda"
+    },
+    "escritura_compra": {
+      "fecha_documento": "2019-02-14",
+      "numero_protocolo": "P1123/2019",
+      "valor_declarado": 180000,
+      "notario": "Dr. María González López",
+      "comprador": "Pedro Martínez Ruiz"
+    },
+    "escritura_venta": {
+      "fecha_documento": "2024-10-15",
+      "numero_protocolo": "P8456/2024",
+      "valor_declarado": 135000,
+      "notario": "Dr. Ana López Sánchez",
+      "vendedor": "Pedro Martínez Ruiz"
+    },
+    "analisis": {
+      "diferencia_absoluta": -45000,
+      "diferencia_porcentual": -25.0,
+      "tiempo_transcurrido_meses": 68,
+      "nivel_sospecha": "BAJO",
+      "circunstancias_especiales": [
+        "vivienda_necesita_reformas_importantes",
+        "problemas_estructurales_detectados",
+        "venta_urgente_por_necesidad_liquidez",
+        "mercado_inmobiliario_local_estancado"
+      ]
+    },
+    "documentacion_justificativa": {
+      "informe_tecnico_deterioro": true,
+      "presupuesto_reformas": 35000,
+      "certificado_urgencia_medica": true,
+      "tasacion_oficial": 140000
+    }
+  }
+]

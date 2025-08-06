@@ -1,0 +1,38 @@
+---
+alwaysApply: true
+---
+ARCHIVOS DE CONFIGURACIÓN CRÍTICOS:
+- config/prompts/Municipal_AI_Project_Memory.txt (memoria contextual completa 255 líneas)
+- config/prompts/Rol_Goals_Tasks.txt (rol asistente, objetivos, tareas generales)
+- config/prompts/Triggers_and_RAG.txt (comportamiento RAG, triggers específicos)
+- config/prompts/Context.txt (aplicaciones uso, régimen tributario ampliado)
+- legal-compliance/ (documentación normativa exhaustiva)
+- config/last_chat_context.md (contexto chat anterior "Qué es Docker Swarm")
+
+APLICACIONES MUNICIPALES EN USO:
+- Outlook (comunicaciones internas)
+- Word/Excel (gestión documental)
+- GTT (gestión tributaria principal)
+- Gestiona (registro y tramitación)
+- Correos.es (PEE y acuses recibo)
+
+PROTOCOLO INICIO CUALQUIER CHAT:
+1. Revisar estado actual en Municipal_AI_Project_Memory.txt
+2. Aplicar metodología establecida (respuesta por cuestión)
+3. Considerar contexto temporal actualizado (verificar fecha)
+4. Mantener enfoque integral régimen tributario (no solo IIVTNU)
+5. Consultar documentación legal-compliance para contexto normativo
+6. Recordar limitaciones tiempo José (ritmo flexible)
+
+ESTRATEGIA DE DESARROLLO:
+- MCP (Model Context Protocol) para flujo trabajo tributario
+- LLM para extracción información estructurada documentos
+- Integración segura herramientas ayuntamiento existentes
+- Escalabilidad otras áreas administrativas (vados, licencias, etc.)
+- Cumplimiento estricto normativa desde fase inicial
+
+RECURSOS ADICIONALES:
+- BOE/DOUE (consulta obligatoria temas RGPD)
+- AEPD (guías interpretación práctica)
+- Casos éxito automatización municipal (búsqueda exhaustiva)
+- Contactos institucionales para replicabilidad

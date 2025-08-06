@@ -1,0 +1,33 @@
+---
+alwaysApply: true
+---
+
+ESTADO ACTUAL DEL PROYECTO (1 AGOSTO 2025, 11:00h):
+
+DOCUMENTACIÓN LEGAL-COMPLIANCE COMPLETADA (8/13 - 62%):
+✅ 01_Marco_Normativo_Completo.md (RGPD, AI Act, normativa europea/española, clasificación riesgos IA)
+✅ 02_Principios_Fundamentales_Aplicacion.md (principios RGPD/AI Act aplicados, checklist operativo)  
+✅ 03_Arquitectura_Tecnica_Conforme.md (arquitectura híbrida por sensibilidad datos, Docker Swarm conforme)
+✅ 04_Documentacion_Obligatoria.md (documentación legal obligatoria por RGPD/AI Act/ENS)
+✅ 05_Medidas_Tecnicas_Organizativas.md (87 medidas técnicas y organizativas específicas)
+✅ 06_Derechos_Ciudadanos_Implementacion.md (implementación práctica derechos RGPD)
+✅ 07_Transferencias_Internacionales.md (marco RGPD transferencias datos cloud UE)
+✅ 08_Regulacion_IA_Especifica.md (AI Act específico sistemas municipales, clasificación, supervisión)
+
+PRÓXIMO ARCHIVO A DESARROLLAR: 09_Procedimientos_Operativos.md
+
+PENDIENTES (5/13): 09_Procedimientos_Operativos.md, 10_Gestion_Incidentes.md, 11_Argumentos_Anti_Excusas.md, 12_Metricas_Cumplimiento.md, 13_Formacion_Obligatoria.md
+
+PROTOCOLO OBLIGATORIO AL INICIAR CUALQUIER CHAT:
+1. Verificar fecha y hora actual (comando `date`)
+2. Revisar estado real del proyecto (listar archivos completados)
+3. Actualizar Municipal_AI_Project_Memory.txt con información precisa
+4. Solo entonces proceder con el trabajo
+
+CONTEXTO CRÍTICO:
+- José: Auxiliar administrativo interino - Inspección Tributaria Alfafar
+- Especialidad: IIVTNU pero sistema debe cubrir TODO el régimen tributario municipal
+- Metodología: Respuesta individual por cuestión hasta comprensión total
+- Proyecto a largo plazo, ritmo flexible, sin cronogramas rígidos
+- Arquitectura: Docker Swarm híbrido (on-premise datos críticos + cloud UE datos medios)
+- Supervisión humana obligatoria en decisiones automatizadas

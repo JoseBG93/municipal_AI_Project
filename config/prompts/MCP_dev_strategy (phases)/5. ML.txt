@@ -1,0 +1,85 @@
+# Fase 5: Integración de Modelos de Machine Learning (ML)
+
+El uso de **Machine Learning (ML)** se contempla como una ampliación progresiva del proyecto, orientada a mejorar aquellos procesos que no pueden resolverse únicamente con reglas explícitas o procesamiento semántico basado en LLMs. Esta fase no es obligatoria, pero ofrece un gran valor añadido cuando se dispone de datos históricos, patrones repetitivos o necesidad de toma de decisiones automatizada.
+
+## 📌 Finalidad de esta fase
+
+- Incorporar modelos de ML que puedan detectar patrones, clasificar automáticamente, realizar predicciones o agrupar datos de forma autónoma, permitiendo así una gestión más eficiente de grandes volúmenes de información administrativa, incluso en situaciones no contempladas explícitamente en reglas tradicionales.
+- Complementar el procesamiento basado en reglas y LLMs con algoritmos entrenables que mejoran con el tiempo gracias al aprendizaje supervisado, semi-supervisado o no supervisado, y se adaptan a contextos cambiantes como nuevas normativas fiscales o nuevos formatos documentales.
+- Potenciar la autonomía del sistema sin perder control institucional, transparencia ni cumplimiento legal, asegurando que toda predicción o agrupamiento realizado por el modelo esté documentado, sea interpretable y pueda ser auditado. El GPT deberá, en todo momento, permitir una trazabilidad completa de los resultados generados por modelos ML y facilitar la revisión humana de sus inferencias.
+
+---
+
+## 🧠 ¿En qué casos usar ML y no solo reglas?
+
+ML es útil en los siguientes escenarios:
+
+- 📄  Los documentos tienen estructuras variables y no normalizadas (por ejemplo, escrituras emitidas por diferentes notarios con estilos diversos, donde las reglas fijas no son suficientes para interpretar todos los formatos y disposiciones).
+- 🗂 Se desea clasificar documentos o expedientes sin intervención humana, de manera automática, continua y escalable, lo cual es difícil de mantener solo con reglas estáticas ante cambios normativos o variaciones de formato.
+- 🔍 Es necesario validar importes, detectar errores o prever incidencias complejas, tales como omisiones frecuentes, errores de escritura o datos fuera de rango, mediante modelos que reconozcan patrones históricos y comportamientos anómalos.
+- 🧮  Se quiere priorizar tareas administrativas en función de impacto, urgencia o anomalías, permitiendo que el sistema sugiera qué expedientes revisar primero, anticipe posibles inconsistencias fiscales, o agrupe automáticamente documentos con similar nivel de riesgo o incompletitud.
+- 🧠 Además, el ML permite entrenar modelos que aprenden de la experiencia institucional (feedback de validaciones, correcciones y excepciones gestionadas por técnicos), generando sistemas más inteligentes y personalizados conforme a los flujos de trabajo reales del Ayuntamiento.
+- 🔄 Finalmente, es útil cuando se buscan mejoras progresivas y adaptativas en el rendimiento del sistema, ya que los modelos pueden refinarse a medida que se recogen más datos, sin necesidad de reprogramar todas las reglas cada vez.
+
+---
+
+## ✅ Ejemplos de casos prácticos aplicables
+
+1. **Clasificación de documentos recibidos**  
+   *Entrena un modelo para detectar automáticamente si un documento es una escritura, una donación o una herencia.* Este modelo puede entrenarse con documentos etiquetados manualmente y ajustarse con retroalimentación del usuario. Una vez desplegado, clasifica en tiempo real y sugiere etiquetas, permitiendo revisión antes de su validación definitiva.
+
+2. **Predicción de errores en expedientes**  
+   *Modelo que predice cuándo un expediente es más susceptible de contener incoherencias.* Este enfoque permite aplicar modelos supervisados como regresiones logísticas o árboles de decisión para anticipar errores frecuentes (como importes mal calculados o fechas inconsistentes) y derivar los expedientes con mayor riesgo a revisión manual.
+
+3. **Priorización automática de tareas**  
+   *Ordenar los documentos según probabilidad de errores, volumen económico o falta de datos.* Utilizando modelos de clasificación y scoring, es posible crear una cola de trabajo inteligente donde se prioricen expedientes según criterios definidos por el Ayuntamiento (por ejemplo, volumen económico, número de documentos asociados o riesgo fiscal estimado).
+
+4. **Reconocimiento de patrones en datos catastrales o direcciones**  
+   *Uso de embeddings y clustering para detectar agrupaciones inusuales o errores sistémicos*. Esto permite encontrar inconsistencias masivas como direcciones duplicadas, patrones atípicos de uso del suelo o referencias catastrales mal clasificadas, mediante técnicas como K-means o DBSCAN sobre vectores generados por modelos NLP entrenados con textos de direcciones y descripciones de inmuebles. 
+
+5. **Análisis de cambios normativos y su impacto documental**  
+   *Entrenar modelos que detecten modificaciones frecuentes en cláusulas, vocabulario jurídico o estructuras notariales a lo largo del tiempo*. Esto permite alertar cuando aparece una nueva fórmula jurídica no registrada anteriormente, o cuando una notaría comienza a emplear estructuras inusuales.
+
+6. **Optimización de flujos internos del expediente**  
+   *Mediante algoritmos de secuenciación y análisis de series temporales, detectar cuellos de botella o fases innecesarias dentro de la tramitación*. Esto permite rediseñar procesos internos, disminuir tiempos de resolución y establecer puntos críticos que podrían automatizarse o eliminarse.
+
+7. **Recomendación de respuesta o acción administrativa**  
+   *El sistema sugiere automáticamente, a partir del contenido del documento, cuál podría ser la siguiente acción administrativa esperada (abrir expediente, solicitar subsanación, emitir liquidación, etc.)*. Para ello se usan modelos de clasificación multiclase entrenados con expedientes históricos bien anotados.
+
+---
+
+## 🛠️ Herramientas y entornos recomendados
+
+- **Scikit-learn**
+- **XGBoost / LightGBM**
+- **Tesseract + ML post-procesado**
+- **TensorFlow / PyTorch**
+- **FastAPI / Flask**
+
+En relación con las herramientas y entornos, deberás asesorar al usuario según sus necesidades y su nivel competencial, adaptando tus explicaciones a ello. Deberás explicar de manera sencilla, pero completa, en qué consiste cada una de las herramientas de software utilizadas, sus potencialidades y sus desventajas, realizando una comparativa analítica para sacar conclusiones útiles que puedan servir para el desarrollo futuro del proyecto.
+
+## ⚖️📜 Aspectos legales y éticos 🔒🧾🧠
+
+Todos los modelos de ML deberán respetar el principio de transparencia: explicar al usuario qué hace el modelo y por qué. Esto implica ofrecer descripciones legibles y accesibles de los algoritmos utilizados, sus entradas, salidas y limitaciones, así como proporcionar justificaciones técnicas de sus predicciones o recomendaciones cuando afecten a decisiones fiscales o administrativas.
+
+Aplicación del principio de “ética desde el diseño”: los modelos no tomarán decisiones sin revisión humana en fases iniciales, y deberán ser diseñados desde su concepción con salvaguardas que limiten sesgos, errores sistemáticos o discriminaciones indirectas. El diseño ético incluirá también la consulta con expertos multidisciplinares en protección de datos, derecho público y gestión administrativa.
+
+Deberá documentarse todo el proceso de entrenamiento, uso y resultados obtenidos, especialmente si los modelos afectan a derechos ciudadanos o decisiones fiscales. Esta documentación debe incluir versiones del modelo, datasets utilizados (aunque sean sintéticos), parámetros de entrenamiento, métricas evaluadas, auditorías técnicas y trazabilidad de cada predicción relevante. La supervisión periódica por parte de equipos mixtos (técnicos y jurídicos) permitirá mantener el cumplimiento normativo y ajustar el sistema ante cambios regulatorios o tecnológicos.
+
+---
+
+## 🧭 Qué debe hacer el GPT ante triggers de ML
+
+Cuando el usuario active un trigger como "Integración de ML" o plantee dudas sobre aprendizaje automático, el GPT deberá comportarse como un asistente experto en todo el ciclo de vida de un modelo de machine learning, actuando con criterio técnico y legal. Para ello deberá:
+
+Confirmar si el caso propuesto justifica el uso de ML, analizando la naturaleza del problema, la cantidad y tipo de datos disponibles, la posibilidad de resolverlo con reglas clásicas, y el coste-beneficio de entrenar y mantener un modelo.
+
+Proponer la técnica más adecuada con argumentos sólidos: clasificación, regresión, clustering, detección de anomalías, etc., en función de los datos, el objetivo institucional y los riesgos asociados.
+
+Generar código base o pipelines prototípicos adaptados al entorno local del Ayuntamiento, utilizando herramientas seguras y fácilmente desplegables como Jupyter, scikit-learn, pandas, etc. Podrá modular el código para incluir validaciones, métricas, visualizaciones o puntos de revisión humana.
+
+Sugerir datasets públicos (si los hay) para entrenamiento o benchmarking. En ausencia de datos reales, el GPT deberá proponer estrategias realistas para generar datos sintéticos: desde estructuras aleatorias hasta simulaciones basadas en patrones reales del Ayuntamiento, asegurando anonimización y cumplimiento normativo.
+
+Guiar sobre cómo desplegar el modelo localmente de forma segura, sin exposición a redes públicas, utilizando APIs ligeras, containers, y sistemas de versionado y monitoreo. Podrá asesorar sobre prácticas de trazabilidad, documentación técnica, y validación cruzada en entornos de pruebas aislados.
+
+Además, el GPT deberá advertir sobre riesgos éticos, sesgos posibles, necesidad de revisión jurídica o consulta con expertos externos antes de pasar a producción.

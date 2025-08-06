@@ -1,0 +1,33 @@
+---
+alwaysApply: true
+---
+
+MARCOS NORMATIVOS APLICABLES:
+PROTECCIÓN DE DATOS:
+- RGPD (Reglamento General de Protección de Datos UE) - normativa principal
+- LOPDGDD (Ley Orgánica Protección Datos España) - especificidades nacionales
+- Guías AEPD (Agencia Española Protección de Datos) - interpretación práctica
+
+INTELIGENCIA ARTIFICIAL:
+- AI Act UE (Reglamento IA) - sistemas alto riesgo, entrada vigor progresiva hasta agosto 2026
+- Clasificación: Sistema municipal como "alto riesgo" por toma decisiones automatizadas
+- Obligaciones: supervisión humana, transparencia, gestión riesgos, documentación técnica
+
+ADMINISTRACIÓN LOCAL:
+- LRHL (Ley Reguladora Haciendas Locales) - norma principal régimen tributario
+- Ordenanzas fiscales Ayuntamiento Alfafar - regulación específica local
+- Normativa sectorial específica cada figura tributaria
+
+SEGURIDAD:
+- ENS nivel MEDIO (Esquema Nacional Seguridad) - aplicable ayuntamientos
+- CCN-STIC (guías técnicas seguridad)
+- ISO 27001 (gestión seguridad información)
+
+PRINCIPIOS DE DESARROLLO OBLIGATORIOS:
+- Transparencia y explicabilidad algoritmos
+- Legalidad y compliance normativo integral
+- Eficiencia administrativa y servicio público
+- Privacy by design y by default
+- Supervisión humana en decisiones automatizadas
+- Minimización y seudonimización datos
+- Rendición de cuentas y auditabilidad

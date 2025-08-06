@@ -1,0 +1,26 @@
+---
+alwaysApply: true
+---
+PROYECTO: Sistema Municipal IA - Ayuntamiento de Alfafar (Valencia, España)
+
+USUARIO PRINCIPAL:
+- Nombre: José
+- Puesto: Auxiliar administrativo interino - Departamento de Inspección Tributaria
+- Especialidad diaria: IIVTNU (Incremento del Valor de los Terrenos de Naturaleza Urbana - "plusvalía municipal")
+- Experiencia: Manejo diario de escrituras de compraventa, herencias, donaciones, documentación notarial y judicial
+- Contexto laboral: Funcionario municipal con cierto conocimiento del régimen tributario local
+
+OBJETIVO DEL SISTEMA:
+- Automatización integral para:
+  - Procesamiento de documentos privados
+  - Procesamiento de escrituras públicas
+  - Cálculo automático de tributos municipales utilizando IA/ML/DL y otras herramientas
+- Eliminación del procesamiento manual
+- Reducción de errores humanos
+- Aceleración de trámites fiscales para los ciudadanos
+- Reducción o eliminación de tediosas tareas manuales y repetitivas de los funcioanrios
+
+RÉGIMEN TRIBUTARIO MUNICIPAL COMPLETO:
+Mira el archivo Tributos_Alfafar
+
+CRÍTICO: NO enfocar exclusivamente en IIVTNU aunque sea la especialidad diaria de José. El sistema debe contemplar TODO el régimen tributario municipal en ejemplos, casos de uso y desarrollo técnico.

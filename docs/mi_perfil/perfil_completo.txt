@@ -1,0 +1,323 @@
+═══════════════════════════════════════════════════════════════════════════════
+                           PERFIL PROFESIONAL COMPLETO
+                                     JOSÉ
+                               AGOSTO 2025
+═══════════════════════════════════════════════════════════════════════════════
+
+██████████████████████████████████████████████████████████████████████████████
+█                            INFORMACIÓN PERSONAL                            █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ DATOS PROFESIONALES ─────────────────────────────────────────────────────┐
+│ • Cargo Actual: Auxiliar Administrativo Interino                          │
+│ • Departamento: Inspección Tributaria                                     │  
+│ • Organización: Ayuntamiento de Alfafar                                   │
+│ • Objetivo Principal: Conseguir trabajo remoto en programación, ciencia   │
+│   de datos o IA, donde pueda sentirme realizado contribuyendo al          │
+│   despliegue de aplicaciones y sistemas que implementen soluciones        │
+│   a problemas reales, mientras continúo con mi aprendizaje                │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FUNCIONES PROFESIONALES DIARIAS ─────────────────────────────────────────┐
+│ • Verificación liquidaciones y autoliquidaciones de impuestos             │
+│ • Revisión escrituras (compraventas, donaciones, herencias, etc.)         │
+│ • Inspecciones de campo (vados, actividades, etc.)                        │
+│ • Uso profesional diario, mediante software de Ayuntamiento, entidades    │
+│   subcontratadas y otras AA.PP: GTT, Gestiona, Correos, Catastro, AEAT    │
+│ • Conocimiento profundo de procesos administrativos y tributarios reales  │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ OBJETIVOS PERSONALES ────────────────────────────────────────────────────┐
+│ • 🌍 Alcanzar nivel C1 en inglés                                          │
+│ • 💪 Mantener rutina de gimnasio regular                                  │
+│ • 🧘 Continuar práctica de ayuno                                          │
+│ • 🎵 Disfrutar música electrónica (IDM, techno, house, dubstep, trance)   │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ ESTILO DE COMUNICACIÓN Y APRENDIZAJE ────────────────────────────────────┐
+│ • Enfoque "FP estructurado": ENTENDER → PRACTICAR → APLICAR → ESCALAR     │
+│ • Prioriza comprensión conceptual antes que generación de código          │
+│ • Necesita entender QUÉ, POR QUÉ, CÓMO de cada tecnología                │
+│ • Busca asentar fundamentos sólidos antes de avanzar                      │
+│ • Prefiere orientación estratégica a medio plazo                          │
+│ • Comunicación: conversacional, alentador, mentalidad progresista         │
+│ • Aprecia propuestas concretas y odia tareas tediosas                     │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                              FORMACIÓN ACTUAL                             █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ MASTERS EN CURSO Y FINALIZADOS ──────────────────────────────────────────┐
+│                                                                            │
+│ ✅ MASTER INTELIGENCIA ARTIFICIAL (BigSchool) - FINALIZADO                │
+│    ├─ Copilot Chat: EN PROCESO DE APRENDIZAJE                             │
+│    ├─ Large Language Models (LLMs): DOMINADO                              │
+│    ├─ Diseño de GPTs para diferentes tareas: DOMINADO                     │
+│    ├─ Conexión GPTs a bases de datos: EN PROCESO DE APRENDIZAJE           │
+│    ├─ Agent Builder (creación de agentes): EN PROCESO DE APRENDIZAJE      │
+│    ├─ Make (automatización workflows): EN PROCESO DE APRENDIZAJE          │
+│    ├─ Assistant API (Botpress, Copilot Studio): EN PROCESO DE APRENDIZAJE │
+│    ├─ IA en Microsoft Office & Google Workspace: DOMINADO                 │
+│    ├─ Fine-tuning & RAG: EN PROCESO DE APRENDIZAJE                        │
+│    ├─ Aspectos legales IA: ética, gobernanza, AI Act: EN PROCESO          │
+│    ├─ Herramientas audiovisuales: MidJourney, Leonardo AI, Freepik,       │
+│    │   Let's Enhance AI, Ideogram, Krutr, Magnific: EN PROCESO            │
+│    ├─ Avatares digitales: HeyGen, ElevenLabs: EN PROCESO DE APRENDIZAJE   │
+│    ├─ Marketing digital: SEO, SEM, redes sociales, email: EN PROCESO      │
+│    └─ Automatización creación de contenido: EN PROCESO                    │
+│                                                                            │
+│ 📚 MASTER FULL-STACK PROGRAMMING (Conquer Blocks) - EN CURSO              │
+│    ├─ LINUX: Shell Script/Cron COMPLETADO ✅                              │
+│    ├─ PENDIENTE: SSH, claves públicas/privadas, rsync                     │
+│    ├─ GIT/GITHUB: TODO pendiente (repo, push, flujo, GitHub Pages)        │
+│    ├─ PYTHON BÁSICO: ~29 clases pendientes                                │
+│    │   └─ (listas, arrays, tuplas, sets, diccionarios)                    │
+│    ├─ PYTHON AVANZADO: ~31 clases pendientes                              │
+│    │   └─ (funciones, archivos, POO, ejercicios)                          │
+│    └─ BONUS: Estadística Python, Web Scraping, Proyectos                  │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FUENTES DE FORMACIÓN PRINCIPALES ────────────────────────────────────────┐
+│ 1. 🎓 Máster ConquerBlocks de Full Stack (cursando actualmente)           │
+│ 2. 🎓 EDTeam (plataforma principal para cursos técnicos)                  │
+│ 3. 🎓 Master de IA (finalizado)                                            │
+│ 4. 🎓 YouTube (videos educativos)                                          │
+│ 5. 🎓 Coursera (cursos estructurados)                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ CURSOS EDTEAM DISPONIBLES (SEGÚN NECESIDADES) ───────────────────────────┐
+│ • Docker, DevOps, Data Science, Machine Learning                          │
+│ • Python & librerías de data science                                      │
+│ • CI/CD con GitLab, Azure, AWS, Google Cloud Platform                     │
+│ • Bases de datos SQL & PostgreSQL                                         │
+│ • APIs Python con FastAPI, REST APIs                                      │
+│ • Redes neuronales con TensorFlow                                         │
+│ • Git & GitHub, Linux                                                     │
+│ • Estado: DISPONIBLES para estudiar cuando sea necesario                  │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                            STACK TECNOLÓGICO                              █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ LENGUAJES DE PROGRAMACIÓN ───────────────────────────────────────────────┐
+│                                                                            │
+│ 🐍 PYTHON: FAMILIARIZADO/INTERMEDIO ⭐⭐⭐⭐                               │
+│    ├─ Librerías: numpy, matplotlib, pandas                                │
+│    ├─ Principal lenguaje de trabajo                                       │
+│    ├─ Nivel: hasta POO básica                                             │
+│    └─ Conceptos avanzados necesitan cierta explicación                    │
+│                                                                            │
+│ ☕ JAVA: NOCIONES BÁSICAS ⭐                                               │
+│    ├─ Estructura Maven (básica)                                           │
+│    ├─ Configurado en /home/jose/My_Projects/myJavaEnv/                     │
+│    ├─ Script run_java.sh y alias 'runjava' funcionando                    │
+│    └─ Conocimientos muy fundamentales                                     │
+│                                                                            │
+│ 🗃️ SQL: BASE SÓLIDA ⭐⭐⭐                                                  │
+│    ├─ PostgreSQL (poca experiencia, algo familiarizado con la interfaz)   │
+│    └─ Queries y bases de datos básicas                                    │
+│                                                                            │
+│ 💻 BASH SCRIPTING: FAMILIARIZADO ⭐⭐⭐                                     │
+│    ├─ Muy familiarizado con Linux/Bash                                    │
+│    ├─ Scripts en my_Shell_Scripts/                                        │
+│    ├─ Le gusta bash scripting                                             │
+│    └─ Considera fundamental para ciberseguridad                           │
+│                                                                            │
+│ ❌ OTROS LENGUAJES: NINGUNO actualmente                                    │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FRAMEWORKS Y LIBRERÍAS ──────────────────────────────────────────────────┐
+│ ❌ Estado actual: NO HA ESTUDIADO FRAMEWORKS                               │
+│    ├─ Área pendiente de explorar en el futuro                            │
+│    ├─ Campo abierto para especialización                                  │
+│    └─ Frontend: solo sabe que existen HTML/CSS                            │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ HERRAMIENTAS ESPECIALIZADAS ─────────────────────────────────────────────┐
+│                                                                            │
+│ 🏛️ GTT SOFTWARE: EXPERIENCIA PROFESIONAL DIARIA ⭐⭐⭐⭐                  │
+│    ├─ Verificación declaraciones y liquidaciones                          │
+│    ├─ Uso profesional diario                                              │
+│    └─ Conocimiento de procesos reales                                     │
+│                                                                            │
+│ 🏛️ GESTIONA: EXPERIENCIA PROFESIONAL DIARIA ⭐⭐⭐⭐                      │
+│    ├─ Gestión administrativa municipal                                    │
+│    ├─ Uso profesional diario                                              │
+│    └─ Experiencia real con workflows administrativos                      │
+│                                                                            │
+│ 🐳 DOCKER: CONCEPTOS BÁSICOS ⭐⭐                                          │
+│    ├─ Comandos básicos, imágenes/contenedores                             │
+│    ├─ Configuración completa en my_Docker/                                │
+│    ├─ NO sabe implementar propios containers aún                          │
+│    ├─ Visto en EDTeam y YouTube, pero sigo sin tener claro para qué       │
+│    │   se utilizan realmente y cómo implementarlos y entender su          │
+│    │   funcionamiento                                                     │
+│    └─ Disponible en EDTeam para profundizar                               │
+│                                                                            │
+│ 🤖 AUTOMATIZACIÓN: MAKE ⭐⭐⭐                                              │
+│    ├─ Conceptos fundamentales dominados                                   │
+│    ├─ Aplicación práctica en progreso                                     │
+│    └─ Incluido en Master IA finalizado                                    │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ ENTORNO DE DESARROLLO ───────────────────────────────────────────────────┐
+│ • Sistema: WSL2 Ubuntu 22.04 ⭐⭐⭐                                        │
+│ • Workspace: /home/jose/My_Projects/                                      │
+│ • Editor: Cursor/VS Code/Windsurf/Otros IDEs nuevos (buscar en Internet) │
+│ • Java 11 instalado y funcionando                                        │
+│ • Estructura de proyectos organizada                                     │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                           PROYECTOS EXISTENTES                            █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ PROYECTOS EN WORKSPACE ──────────────────────────────────────────────────┐
+│ 🏛️ municipal-ai-system/                                                   │
+│    └─ Sistema AI municipal complejo (módulos especializados)              │
+│                                                                            │
+│ 📝 notes-assistant/                                                        │
+│    └─ Aplicación full stack (frontend/backend separados)                  │
+│                                                                            │
+│ 📝 notesAssistant/                                                         │
+│    └─ Proyecto Python con src/tests/                                      │
+│                                                                            │
+│ 🐍 OOP_Python/                                                            │
+│    └─ Conceptos Python POO                                                │
+│                                                                            │
+│ 🐳 my_Docker/                                                             │
+│    └─ Configuración Docker completa                                       │
+│                                                                            │
+│ 💻 my_Shell_Scripts/                                                      │
+│    └─ Scripts bash funcionales                                            │
+│                                                                            │
+│ ☕ myJavaEnv/                                                             │
+│    └─ Entorno Java con Maven                                              │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                               FORTALEZAS                                  █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ FORTALEZAS TÉCNICAS ACTUALES ────────────────────────────────────────────┐
+│ 1. ⭐⭐⭐⭐ Python + Análisis datos (numpy, matplotlib, pandas)           │
+│ 2. ⭐⭐⭐⭐ IA completa (Master finalizado - GPTs, LLMs, RAG, etc.)        │
+│ 3. ⭐⭐⭐⭐ SQL/PostgreSQL (base sólida)                                   │
+│ 4. ⭐⭐⭐⭐ Herramientas administrativas reales (GTT, Gestiona)            │
+│ 5. ⭐⭐⭐⭐ Experiencia procesos administrativos/tributarios reales        │
+│ 6. ⭐⭐⭐ Linux/Bash scripting (muy familiarizado)                         │
+│ 7. ⭐⭐⭐ Automatización con Make (en aprendizaje activo)                  │
+│ 8. ⭐⭐ Docker conceptos básicos                                           │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PERFIL ÚNICO Y VENTAJAS COMPETITIVAS ────────────────────────────────────┐
+│ 🎯 COMBINACIÓN PODEROSA:                                                  │
+│    ├─ Experiencia administrativa real + Master IA finalizado + Python    │
+│    ├─ Conocimiento procesos municipales + soluciones tecnológicas        │
+│    ├─ Entiende el PROBLEMA (inspección) y la SOLUCIÓN (IA/automatización)│
+│    ├─ Experiencia práctica con software especializado sector público     │
+│    └─ Visión end-to-end: verificación escrituras → desarrollo sistemas   │
+│                                                                            │
+│ 🎯 CASOS DE USO ESPECÍFICOS IDENTIFICADOS:                                │
+│    ├─ Automatización verificación declaraciones                           │
+│    ├─ Detección patrones evasión fiscal (diferencias temporales)          │
+│    ├─ Clasificación inteligente escrituras (compraventa/donación/herencia)│
+│    ├─ Análisis datos tributarios y alertas automáticas                    │
+│    ├─ Chatbots especializados para ciudadanos                             │
+│    ├─ Flujos de trabajo inspección automatizados                          │
+│    └─ Integración con GTT/Gestiona existente                              │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                          ROADMAP DE DESARROLLO                            █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ INMEDIATO (EN CURSO) ─────────────────────────────────────────────────────┐
+│ 📚 Completar ConquerBlocks (Python avanzado, Git/GitHub)                  │
+│ 🤖 Profundizar Make y automatización                                      │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FUTURO CERCANO (3-6 MESES) ──────────────────────────────────────────────┐
+│ 🌐 Frameworks (primer framework probablemente web)                        │
+│ 🐳 Docker práctico (implementar propios containers)                       │
+│ 🔌 APIs y desarrollo backend (FastAPI cuando llegue el momento)           │
+│ 📚 Git/GitHub flujo de trabajo profesional                                │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FUTURO MEDIO PLAZO (6-12 MESES) ─────────────────────────────────────────┐
+│ 🦜 LangChain para casos básicos municipales                               │
+│ ☁️ DevOps y Cloud (cursos EDTeam disponibles)                             │
+│ 🔒 Ciberseguridad (muy interesado, bash fundamental)                      │
+│ 🌐 Desarrollo web avanzado                                                │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FUTURO LARGO PLAZO (1-2 AÑOS) ───────────────────────────────────────────┐
+│ 🕸️ LangGraph para sistemas multi-agente complejos                         │
+│ ⚙️ Kubernetes (nada actualmente)                                          │
+│ 🏗️ Arquitecturas software avanzadas                                       │
+│ 🏛️ Sistema municipal escalable y funcional completo                       │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ ROADMAP IA FUTURO ESPECÍFICO ────────────────────────────────────────────┐
+│ 🎯 ESTRATEGIA PLANIFICADA:                                                │
+│    ├─ LangChain → Prototipado (resumenes, chat, RAG) procesos municipales │
+│    ├─ LangGraph → Sistemas multi-agente, coordinación avanzada            │
+│    └─ Estrategia híbrida: LangChain como subgrafos en LangGraph           │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                            VISIÓN ESTRATÉGICA                             █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ OBJETIVOS PROFESIONALES INMEDIATOS ──────────────────────────────────────┐
+│ 1. 🎯 Conseguir trabajo remoto en programación/IA/ciencia de datos        │
+│ 2. 📚 Completar Master Full-Stack Programming (ConquerBlocks)             │
+│ 3. 🤖 Profundizar automatización con Make                                 │
+│ 4. 🌍 Alcanzar C1 inglés                                                  │
+│ 5. 🧠 Mantener actualización IA/ML/redes neuronales/agentes               │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ VISIÓN LARGO PLAZO ──────────────────────────────────────────────────────┐
+│ 🚀 MISIÓN TRANSFORMADORA:                                                 │
+│    "Revolucionar todo un departamento y, por qué no, una parte           │
+│     importante de la faena de todo un Ayuntamiento"                       │
+│                                                                            │
+│ 🎯 OBJETIVOS ESTRATÉGICOS:                                                │
+│    ├─ Crear sistema integrado LangChain/LangGraph                         │
+│    ├─ Automatizar flujos municipales                                      │
+│    ├─ Desarrollar "verdadero proyecto escalable y funcional"              │
+│    ├─ Integrar LLMs, requests, datos                                      │
+│    └─ Transformar procesos administrativos reales con IA                  │
+└────────────────────────────────────────────────────────────────────────────┘
+
+██████████████████████████████████████████████████████████████████████████████
+█                       CONTEXTO PARA MENTORIZACIÓN                        █
+██████████████████████████████████████████████████████████████████████████████
+
+┌─ METODOLOGÍA DE PROYECTO PREFERIDA ───────────────────────────────────────┐
+│ • Planificación guiada desde principio absoluto                           │
+│ • Explicar cada archivo individual - qué contiene, por qué existe,        │
+│   qué relación tiene con el resto del proyecto                            │
+│ • Mostrar interrelaciones entre componentes claramente                    │
+│ • Entender flujo completo: primer archivo → último archivo                │
+│ • No generar código nuevo sin explicar existente primero                  │
+│ • Aplicar metodología paso a paso independiente del lenguaje/framework    │
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ PAUTAS DE COMUNICACIÓN ──────────────────────────────────────────────────┐
+│ • Conectar consejos con trasfondo administrativo/tributario               │
+│ • No preguntar detalles personales básicos ya conocidos                  │
+│ • Siempre proponer pasos concretos                                        │
+│ • Mostrar empatía para tareas repetitivas                                │
+│ • Enfoque conversacional, alentador, mentalidad progresista              │
+└────────────────────────────────────────────────────────────────────────────┘
+
+═══════════════════════════════════════════════════════════════════════════════
+                              NIVEL ACTUAL
+               INTERMEDIO EN PYTHON + IA AVANZADA + 
+           EXPERIENCIA ADMINISTRATIVA ÚNICA + VISIÓN ESTRATÉGICA CLARA
+
+                           ÚLTIMA ACTUALIZACIÓN: ENERO 2025
+═══════════════════════════════════════════════════════════════════════════════ 

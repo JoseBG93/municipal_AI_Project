@@ -1,0 +1,46 @@
+# Database Configuration
+DATABASE_URL=postgresql://municipal_user:municipal_pass@localhost:5432/municipal_ai
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=municipal_ai
+DB_USER=municipal_user
+DB_PASSWORD=municipal_pass
+
+# Redis Configuration
+REDIS_URL=redis://localhost:6379
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+# API Configuration
+API_HOST=0.0.0.0
+API_PORT=8000
+SECRET_KEY=your-secret-key-here
+
+# OCR Configuration
+TESSERACT_PATH=/usr/bin/tesseract
+TESSERACT_LANG=spa
+
+# LLM Configuration
+OPENAI_API_KEY=your-openai-key-here
+HUGGINGFACE_TOKEN=your-hf-token-here
+
+# File Paths
+DATA_PATH=./data
+UPLOAD_PATH=./data/uploads
+OUTPUT_PATH=./data/outputs
+
+# Logging
+LOG_LEVEL=INFO
+LOG_FILE=./logs/app.log
+
+# Environment
+ENVIRONMENT=development
+DEBUG=True
+
+# Integration URLs
+GTT_API_URL=https://api.gtt.example.com
+GESTIONA_API_URL=https://api.gestiona.example.com
+
+# Security
+ALLOWED_HOSTS=localhost,127.0.0.1
+CORS_ORIGINS=http://localhost:3000,http://localhost:8080 

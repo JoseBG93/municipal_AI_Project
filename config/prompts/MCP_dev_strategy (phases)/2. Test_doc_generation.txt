@@ -1,0 +1,21 @@
+Fase 2: Generación de documentación de prueba
+
+1- Crear un conjunto de documentos de prueba, completamente ficticios pero realistas, que sirvan como banco de pruebas durante el desarrollo. Estos documentos deben representar con precisión las estructuras, estilos y lenguajes utilizados en documentos notariales y administrativos reales, pero sin contener datos personales ni sensibles. Se recomienda elaborar los siguientes tipos:
+
+	Escritura de compraventa: incluyendo identificación de partes, descripción del inmueble, importes, forma de pago, cláusulas fiscales y firmas notariales.
+
+	Documento de aceptación de herencia: detallando relación entre herederos, bienes recibidos, referencias catastrales, inventario de patrimonio, cargas y avalúos.
+
+	Donación de inmueble: con descripción de la relación donante-donatario, condiciones de la donación, estado jurídico del bien y tratamiento fiscal previsto.
+
+	Los documentos deberán generarse con variabilidad semántica y estructural, de modo que el sistema pueda entrenarse y validarse en distintos escenarios. También podrán combinarse cláusulas, párrafos y elementos gráficos diversos (membretes, firmas simuladas, sellos ficticios) para aproximarse a casos reales sin comprometer datos verídicos. En esta tarea, el GPT debe colaborar activamente generando borradores automáticos o ayudando a estructurar plantillas adaptables.
+
+2- Incluir múltiples variantes de cada tipo, con distintas configuraciones legales, formatos y estructuras, que reflejen la diversidad real de documentos que pueden encontrarse en la práctica administrativa. Esto implica trabajar con distintas jurisdicciones notariales, fórmulas legales alternativas, grados de detalle en las cláusulas, presencia o ausencia de cargas o afecciones, y documentos con información parcial o ambigua para probar la robustez del sistema. También se deben simular distintos niveles de calidad en la digitalización: documentos escaneados con baja resolución, documentos con errores formales o terminológicos, etc.
+
+3- Incorporar elementos comunes: nombre y código del notario interviniente, firmas manuscritas simuladas, importes en letras y cifras, descripciones del bien con detalle técnico o catastral, referencias catastrales, ubicación geográfica con dirección postal y municipio, fecha de otorgamiento, número de protocolo, comparecientes y relaciones jurídicas entre las partes. También se sugiere incluir sellos ficticios, membretes y anotaciones marginales para enriquecer el contexto documental.
+
+4- Generar estos documentos mediante GPT, tratamiento manual o combinación de ambos, asegurando que reflejen fielmente documentos notariales reales.
+
+5- Guardar y organizar estos documentos con una nomenclatura coherente y trazabilidad completa, utilizando un sistema estandarizado de identificación que facilite su búsqueda, clasificación y posterior validación durante las pruebas del sistema. Por ejemplo, se recomienda usar un código compuesto por tipo de documento, fecha simulada, número de versión, y tipo de variante legal (ej: compraventa_2023-09_v1_formatoA.pdf). Todos los documentos deberán almacenarse en carpetas estructuradas por categoría (compraventas, herencias, donaciones) y acompañarse de un índice descriptivo (en CSV, Excel o JSON) que detalle el contenido de cada archivo, su propósito dentro del entorno de pruebas, los campos clave que contiene, y su relación con otras muestras del dataset. Esta trazabilidad garantizará control documental, reproducibilidad del entrenamiento y evaluaciones del sistema, así como una auditoría precisa en entornos legales o administrativos.
+
+El GPT deberá asumir que todo documento, solicitud o expediente se tramita respetando escrupulosamente el orden de su entrada en el registro municipal. Deberá tener esto presente para generar flujos, sugerencias o validaciones de prioridad administrativa.

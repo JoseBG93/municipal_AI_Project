@@ -1,0 +1,73 @@
+# Integración de Modelos de Machine Learning en Procesos Administrativos Municipales
+
+Este documento forma parte del sistema RAG del GPT personalizado y proporciona contexto técnico y aplicado sobre el uso de ML (Machine Learning) en entornos administrativos, específicamente en el marco de un Ayuntamiento.
+
+## 🎯 Objetivo
+
+Ofrecer al GPT una referencia detallada de cuándo y cómo utilizar modelos de ML para apoyar tareas automatizadas en el ámbito tributario, documental y administrativo.
+
+--- 
+
+## Recomendaciones para integrar ML
+
+- Siempre partir de una evaluación de viabilidad: ¿hay suficientes datos?, ¿es el patrón estable?, ¿justifica el coste?
+
+- Documentar todo el flujo de entrenamiento y validación.
+
+- Evaluar la interpretabilidad del modelo si se aplicará en decisiones sensibles.
+
+- Incluir un módulo de validación humana en fases iniciales (human-in-the-loop).
+
+- Cumplir estrictamente con RGPD en todo el flujo de datos (entrenamiento y predicción).
+
+---
+
+Guía AEPD: Tratamiento automatizado de decisiones
+
+Curso IA aplicada en sector público (INAP)
+
+Documentación Scikit-learn
+
+---
+
+## ✅ Casos de uso recomendados
+
+| Caso de uso                                   | Objetivo                                     | Técnica recomendada                     |
+|-----------------------------------------------|----------------------------------------------|------------------------------------------|
+| Clasificación de tipos de documento            | Identificar escrituras, herencias, donaciones| SVM, Random Forest, Naive Bayes          |
+| Validación de importes                        | Predecir inconsistencias o errores de cálculo| Regressión, XGBoost                      |
+| Agrupación de documentos duplicados            | Evitar redundancias administrativas           | Clustering con K-Means o DBSCAN          |
+| Reconocimiento OCR optimizado                 | Mejora de textos escaneados de mala calidad  | Tesseract + CNN o transformers OCR       |
+| Priorización de tareas                        | Determinar qué documentos revisar primero    | Modelos de scoring o clasificación binaria|
+
+---
+
+## 🧰 Herramientas y frameworks
+
+- **Scikit-learn**: clásico, ideal para prototipos y modelos supervisados.
+- **XGBoost / LightGBM**: para conjuntos de datos tabulares grandes.
+- **spaCy (con entrenamiento personalizado)**: extracción y análisis lingüístico adaptado.
+- **FastAPI**: para desplegar modelos de ML en entorno seguro, sin conexión externa.
+- **Pandas / NumPy**: manipulación de datos y estructuras para entrenamiento.
+
+---
+
+## 📎 Ejemplo de implementación en Python (clasificador simple)
+
+```python
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+import pandas as pd
+
+# Dataset simulado
+data = pd.read_csv("documentos_clasificados.csv")
+X = data.drop(columns=["tipo_documento"])
+y = data["tipo_documento"]
+
+# Entrenamiento
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
+clf = RandomForestClassifier()
+clf.fit(X_train, y_train)
+
+# Predicción
+predicciones = clf.predict(X_test)

@@ -1,0 +1,117 @@
+{
+  "generated_at": "2025-07-23T07:32:54.591273",
+  "total_files": 12,
+  "total_lines": 644,
+  "total_words": 6807,
+  "total_size_kb": 49.42999999999999,
+  "files": [
+    {
+      "path": "config/prompts/Rol_Goals_Tasks.txt",
+      "directory": "config/prompts",
+      "filename": "Rol_Goals_Tasks.txt",
+      "lines": 50,
+      "words": 318,
+      "size_kb": 2.1,
+      "modified": "2025-05-22T22:36:08.930490"
+    },
+    {
+      "path": "config/prompts/Chat_Triggers.txt",
+      "directory": "config/prompts",
+      "filename": "Chat_Triggers.txt",
+      "lines": 65,
+      "words": 356,
+      "size_kb": 2.62,
+      "modified": "2025-05-23T00:00:19.378590"
+    },
+    {
+      "path": "config/prompts/Context.txt",
+      "directory": "config/prompts",
+      "filename": "Context.txt",
+      "lines": 54,
+      "words": 312,
+      "size_kb": 2.17,
+      "modified": "2025-06-30T20:24:50.591921"
+    },
+    {
+      "path": "config/prompts/Triggers_and_RAG.txt",
+      "directory": "config/prompts",
+      "filename": "Triggers_and_RAG.txt",
+      "lines": 42,
+      "words": 435,
+      "size_kb": 2.99,
+      "modified": "2025-05-23T00:10:48.766977"
+    },
+    {
+      "path": "config/prompts/Colab_Coop_Training.txt",
+      "directory": "config/prompts",
+      "filename": "Colab_Coop_Training.txt",
+      "lines": 63,
+      "words": 623,
+      "size_kb": 4.55,
+      "modified": "2025-05-22T18:31:20.837660"
+    },
+    {
+      "path": "config/prompts/LOPDGDG_and_RPD.txt",
+      "directory": "config/prompts",
+      "filename": "LOPDGDG_and_RPD.txt",
+      "lines": 40,
+      "words": 329,
+      "size_kb": 2.33,
+      "modified": "2025-05-22T18:28:11.601468"
+    },
+    {
+      "path": "config/prompts/Examples/ML_usages.txt",
+      "directory": "config/prompts",
+      "filename": "ML_usages.txt",
+      "lines": 73,
+      "words": 374,
+      "size_kb": 3.14,
+      "modified": "2025-05-22T18:03:54.401141"
+    },
+    {
+      "path": "config/prompts/MCP_dev_strategy (phases)/1. MCP_system_design.txt",
+      "directory": "config/prompts",
+      "filename": "1. MCP_system_design.txt",
+      "lines": 80,
+      "words": 1057,
+      "size_kb": 7.7,
+      "modified": "2025-05-22T22:51:34.005941"
+    },
+    {
+      "path": "config/prompts/MCP_dev_strategy (phases)/3. Extracting_data_with_LLM.txt",
+      "directory": "config/prompts",
+      "filename": "3. Extracting_data_with_LLM.txt",
+      "lines": 37,
+      "words": 701,
+      "size_kb": 5.03,
+      "modified": "2025-05-23T00:39:55.223047"
+    },
+    {
+      "path": "config/prompts/MCP_dev_strategy (phases)/4. Integration_drill.txt",
+      "directory": "config/prompts",
+      "filename": "4. Integration_drill.txt",
+      "lines": 34,
+      "words": 434,
+      "size_kb": 3.11,
+      "modified": "2025-05-23T00:43:36.437226"
+    },
+    {
+      "path": "config/prompts/MCP_dev_strategy (phases)/2. Test_doc_generation.txt",
+      "directory": "config/prompts",
+      "filename": "2. Test_doc_generation.txt",
+      "lines": 21,
+      "words": 513,
+      "size_kb": 3.86,
+      "modified": "2025-05-23T12:23:14.315444"
+    },
+    {
+      "path": "config/prompts/MCP_dev_strategy (phases)/5. ML.txt",
+      "directory": "config/prompts",
+      "filename": "5. ML.txt",
+      "lines": 85,
+      "words": 1355,
+      "size_kb": 9.83,
+      "modified": "2025-05-23T00:29:23.615946"
+    }
+  ]
+}

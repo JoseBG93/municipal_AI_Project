@@ -1,0 +1,56 @@
+# EJEMPLO DE DOCUMENTO DE CONTEXTO
+# Fecha: 2024-07-23
+# Propósito: Demostrar cómo estructurar documentos de contexto
+
+## PROYECTO: Sistema Municipal AI - Alfafar
+
+### DEFINICIÓN DEL PROYECTO
+El Sistema Municipal AI es una solución integral de automatización para el procesamiento de documentos notariales y cálculo automático de impuestos municipales en el Ayuntamiento de Alfafar.
+
+### OBJETIVOS PRINCIPALES
+1. Eliminar procesamiento manual de escrituras
+2. Reducir errores en cálculos fiscales
+3. Acelerar trámites ciudadanos
+4. Integrar con sistemas GTT y Gestiona
+
+### ARQUITECTURA TÉCNICA
+- **Microservicios modulares** en Python/FastAPI
+- **Procesamiento OCR** con Tesseract
+- **Extracción LLM** con OpenAI/spaCy
+- **Base de datos** PostgreSQL + Redis
+- **Contenedores** Docker + Kubernetes
+
+### COMPONENTES PRINCIPALES
+1. **document_processor**: OCR y extracción de datos
+2. **tax_calculator**: Cálculos IIVTNU, ISD, bonificaciones  
+3. **integration_layer**: Conectores GTT/Gestiona
+4. **web_interface**: Frontend administrativo
+
+### MARCO LEGAL
+- **RGPD**: Protección de datos personales
+- **LOPDGDD**: Normativa española de datos
+- **Ciberseguridad**: CCN-CERT, INCIBE
+- **Transparencia**: Decisiones algorítmicas explicables
+
+### TIPOS DE DOCUMENTOS
+- Escrituras de compraventa
+- Documentos de herencia
+- Donaciones de inmuebles
+- Permutas y cesiones
+
+### FLUJO DE TRABAJO
+1. Recepción documento → 2. OCR/Extracción → 3. Validación → 4. Cálculo fiscal → 5. Integración sistemas
+
+### ENTORNO TÉCNICO
+- **OS**: Ubuntu 22.04 WSL2
+- **Python**: 3.10+
+- **Desarrollo**: VS Code/Cursor
+- **Gestión**: Makefile + scripts automatizados
+
+### FASES DE DESARROLLO
+- **Fase 1**: MVP con datos sintéticos
+- **Fase 2**: OCR y extracción real
+- **Fase 3**: Integración completa
+- **Fase 4**: Despliegue producción
+
+Este documento sirve como ejemplo de cómo estructurar el contexto del proyecto para que el asistente AI tenga comprensión completa del sistema y pueda proporcionar ayuda más específica y contextualizada. 

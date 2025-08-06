@@ -1,0 +1,37 @@
+# Fase 3: Extracción de datos con LLM
+
+Diseñar un pipeline que procese documentos en distintos formatos (Word, PDF, OCR si es necesario), asegurando compatibilidad con las diversas estructuras y calidades documentales que puedan encontrarse en el entorno municipal. Este pipeline debe estar preparado para:
+
+- Detectar automáticamente el tipo de archivo y su codificación.
+- Aplicar tecnologías de OCR (como Tesseract u otras basadas en ML) en documentos escaneados o imágenes.
+- Convertir documentos en formatos uniformes (por ejemplo, pasar PDFs a texto plano estructurado o HTML intermedio si es necesario).
+- Aplicar preprocesamiento riguroso: limpieza de texto (eliminación de saltos de línea erróneos, caracteres no reconocibles), identificación de secciones clave mediante patrones (regex o LLMs), supresión de ruido (sellos, encabezados no relevantes, márgenes, pies de página).
+- Indexar los contenidos procesados para que sean accesibles desde otros módulos del sistema, permitiendo trazabilidad y depuración de errores. Este pipeline será el primer eslabón técnico en la cadena de extracción de datos, y deberá validarse con documentos de prueba variados para garantizar su solidez.
+
+## Usar LLMs para:
+
+- **Detectar entidades:** extraer automáticamente campos relevantes como nombres, apellidos, NIF/CIF, fechas de otorgamiento, importes de las operaciones, direcciones postales, y referencias catastrales. Esto implica no solo identificar los datos, sino también contextualizarlos dentro de su función legal en el documento.
+
+- **Clasificar documentos y determinar su tipo:** aplicar modelos de clasificación semántica que reconozcan si el documento corresponde a una compraventa, herencia, donación, o escritura pública, basándose en el lenguaje jurídico, estructura del texto y expresiones comunes.
+
+- **Relacionar datos entre sí (por ejemplo, inmueble con contribuyente):** establecer vínculos lógicos y legales entre las entidades reconocidas, como asociar un inmueble con su titular, conectar los valores declarados con los sujetos fiscales, o vincular fechas relevantes a etapas del procedimiento. Esto permitirá construir una representación estructurada y validable conforme al MCP.
+
+- **Representar los datos extraídos conforme a la estructura del MCP:** garantizando que cada entidad y atributo detectado por el sistema se traduzca a una instancia bien formada del modelo previamente definido. Esta representación deberá realizarse en formato técnico compatible (como JSON o JavaScript estructurado) e incluir las relaciones entre entidades, referencias cruzadas, y validaciones previas que aseguren coherencia semántica y fiscal. El GPT deberá generar estructuras completas, con campos normalizados, etiquetas homogéneas y jerarquías claras que faciliten su posterior procesamiento o integración. Además, deberá incluir metadatos como la fuente del dato, nivel de confianza, y cualquier transformación aplicada, con el fin de mantener trazabilidad y control de calidad del sistema en su conjunto.
+
+## Herramientas clave:
+
+- 🐍 **Python + LangChain:** para el diseño, implementación y orquestación de agentes inteligentes y flujos conversacionales con capacidad de razonamiento estructurado y control de contexto.
+- 🧠 **spaCy o NLTK:** librerías de procesamiento de lenguaje natural (NLP) utilizadas para tokenización, análisis gramatical, detección de entidades nombradas (NER), lematización y otras tareas lingüísticas previas a la extracción estructurada.
+- 🧱 **Pydantic o dataclasses:** para definir modelos de datos con validación estricta y tipado estático, facilitando la estructuración segura y coherente de los datos extraídos antes de exportarlos o integrarlos.
+- 🔍 **OpenAI LLM (con funciones de extracción estructurada):** herramienta principal de comprensión semántica, capaz de identificar, contextualizar y convertir información libre en datos estructurados directamente mapeables al modelo MCP. Puede integrarse con LangChain para definir prompts específicos por tipo de documento o fase de análisis.
+
+## Validación
+
+Validar los resultados mediante sets de prueba predefinidos, diseñados específicamente para representar distintas clases documentales, variantes estructurales y niveles de calidad del texto. Cada set deberá incluir documentos con errores intencionados, ambigüedades y casos límite para probar la robustez del sistema. Además del control de precisión (exactitud en la extracción de cada entidad) y cobertura (capacidad para extraer todos los campos requeridos), también se evaluará la capacidad del sistema para:
+
+- Detectar omisiones y errores sutiles.
+- Informar sobre el nivel de confianza de cada extracción.
+- Generar logs explicativos y trazables por documento.
+- Ejecutar métricas cuantitativas (precisión, exhaustividad, F1-score) y cualitativas (revisión manual guiada por el GPT).
+
+El GPT deberá guiar en la creación de estos sets, proponer criterios de evaluación y ayudar en la interpretación de los resultados para iterar en la mejora del sistema.

@@ -1,0 +1,106 @@
+version: '3.8'
+
+services:
+  # Base de datos PostgreSQL
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: municipal_ai
+      POSTGRES_USER: municipal_user
+      POSTGRES_PASSWORD: municipal_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/database/migrations:/docker-entrypoint-initdb.d
+    networks:
+      - municipal_network
+
+  # Redis para cache y sessions
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - municipal_network
+
+  # Procesador de documentos (OCR y extracción)
+  document_processor:
+    build:
+      context: .
+      dockerfile: apps/document_processor/Dockerfile
+    environment:
+      - DATABASE_URL=postgresql://municipal_user:municipal_pass@postgres:5432/municipal_ai
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./data:/app/data
+    ports:
+      - "8001:8000"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - municipal_network
+
+  # Calculadora de impuestos
+  tax_calculator:
+    build:
+      context: .
+      dockerfile: apps/tax_calculator/Dockerfile
+    environment:
+      - DATABASE_URL=postgresql://municipal_user:municipal_pass@postgres:5432/municipal_ai
+      - REDIS_URL=redis://redis:6379
+    ports:
+      - "8002:8000"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - municipal_network
+
+  # Capa de integración
+  integration_layer:
+    build:
+      context: .
+      dockerfile: apps/integration_layer/Dockerfile
+    environment:
+      - DATABASE_URL=postgresql://municipal_user:municipal_pass@postgres:5432/municipal_ai
+      - REDIS_URL=redis://redis:6379
+      - DOCUMENT_PROCESSOR_URL=http://document_processor:8000
+      - TAX_CALCULATOR_URL=http://tax_calculator:8000
+    ports:
+      - "8003:8000"
+    depends_on:
+      - postgres
+      - redis
+      - document_processor
+      - tax_calculator
+    networks:
+      - municipal_network
+
+  # Interfaz web principal
+  web_interface:
+    build:
+      context: .
+      dockerfile: apps/web_interface/Dockerfile
+    environment:
+      - DATABASE_URL=postgresql://municipal_user:municipal_pass@postgres:5432/municipal_ai
+      - REDIS_URL=redis://redis:6379
+      - INTEGRATION_API_URL=http://integration_layer:8000
+    ports:
+      - "8080:8000"
+    depends_on:
+      - postgres
+      - redis
+      - integration_layer
+    volumes:
+      - ./data:/app/data
+    networks:
+      - municipal_network
+
+volumes:
+  postgres_data:
+
+networks:
+  municipal_network:
+    driver: bridge 

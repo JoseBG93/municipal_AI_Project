@@ -1,0 +1,80 @@
+Fase 1: Diseño del sistema MCP
+
+1- Definir detalladamente el modelo de contexto (Context Model) que represente fielmente los flujos de trabajo actuales, teniendo en cuenta la diversidad de documentos administrativos, los actores involucrados, los pasos de tramitación, las dependencias entre sistemas y la trazabilidad normativa. Este modelo debe reflejar no solo las rutas más frecuentes en la gestión de tributos, sino también los casos excepcionales, errores habituales, retroalimentaciones entre sistemas (como GTT y Gestiona), así como los puntos donde intervienen decisiones humanas o validaciones técnicas. Incluirá tanto entidades como acciones, reglas y objetivos, y será la base estructural para todas las automatizaciones posteriores. El GPT deberá contribuir a este diseño iterativamente, ayudando a mapear las interacciones, anticipar conflictos y construir un modelo robusto y adaptable.
+
+2- Identificar y especificar las entidades fundamentales:
+
+	Expediente: unidad básica de trabajo administrativo, identificado por un número único y asociado a un proceso tributario o de gestión. Puede contener múltiples documentos y referencias cruzadas.
+
+	Contribuyente: persona física o jurídica que figura como sujeto pasivo en una operación o procedimiento. Debe incluir nombre completo, NIF/CIF, relación con el inmueble u operación.
+
+	Inmueble: bien objeto de la transacción o procedimiento. Incluirá dirección postal, referencia catastral, valor declarado y uso (residencial, comercial, etc.).
+
+	Documento: cualquier soporte notarial, judicial o administrativo relevante para el proceso. Debe categorizarse por tipo (escritura, herencia, donación, etc.), fecha, notaría, y contener metadatos relevantes.
+
+	Inspector o técnico: persona interna del Ayuntamiento que realiza validaciones, cálculos, clasificaciones o resoluciones. Puede asociarse a fases del expediente o decisiones tomadas.
+
+	Liquidación o cálculo fiscal: entidad derivada del análisis del expediente y documentos, contiene importes, bases imponibles, deducciones, tipo impositivo, estado (propuesta, aprobada, recurrida).
+
+	Vínculos externos: referencias cruzadas a otros expedientes, documentos en Gestiona, entradas registrales o entregas electrónicas asociadas al expediente.
+
+Estas entidades deberán definirse tanto desde un punto de vista semántico (descripción) como estructural (formato técnico JSON/JS compatible con el MCP). El GPT deberá  ayudar a refinar esta definición en función del flujo de trabajo real, y adaptarla si se incorporan nuevas entidades en fases posteriores del proyecto.
+
+3- Definir las acciones posibles: extraer datos (identificar y aislar información clave dentro del contenido del documento), clasificar documento (determinar el tipo de documento según su estructura, contenido y contexto), rellenar plantilla (estructurar los datos extraídos en un formato técnico estándar como JSON, CSV o Excel), validar importe (verificar que los importes recogidos en el documento se ajustan a las normativas fiscales vigentes y a la lógica interna del expediente), vincular documentos (asociar un documento con su expediente correspondiente en GTT o Gestiona, incluyendo referencias cruzadas y actualizaciones del estado del trámite), entre otras tareas que puedan surgir en función del tipo de procedimiento o flujo documental detectado.
+
+4- Establecer reglas y condiciones que rijan estas acciones: coherencia entre fechas (por ejemplo, que la fecha de una escritura no sea posterior a la fecha de apertura del expediente, o que el fallecimiento preceda a la aceptación de herencia), validación de importes (verificación de que los importes indicados se ajustan a las normativas fiscales municipales y autonómicas, así como al valor de referencia del Catastro), relación entre escrituras y fichas fiscales (correspondencia entre los datos declarados en la escritura y la información existente en bases tributarias internas, como titularidades, usos del inmueble o situación registral), y formatos válidos (comprobación de que todos los datos extraídos estén correctamente formateados: fechas en ISO, importes con separador decimal estándar, NIF con estructura válida, direcciones codificadas geográficamente o con formato municipal homologado).
+
+5- Redactar objetivos específicos para cada entidad y acción, que permitan medir el éxito operativo y legal del sistema. Por ejemplo:
+
+	Para la entidad expediente: asegurar que cada expediente contenga todos los documentos requeridos, con referencias cruzadas correctamente establecidas.
+
+	Para contribuyente: vincular correctamente la persona física o jurídica con los inmuebles y operaciones asociadas, garantizando unicidad y consistencia en los datos.
+
+	Para inmueble: establecer que cada registro incluya referencia catastral válida, dirección completa, y valoración fiscal declarada.
+
+	Para documento: lograr que el sistema sea capaz de categorizar automáticamente el tipo documental y extraer los metadatos críticos (fecha, notario, objeto del acto).
+
+	Para inspector/técnico: registrar cada acción administrativa tomada por el funcionario asignado, con trazabilidad y validación documental.
+
+	Para liquidación: generar propuestas de liquidación fiscal ajustadas a normativa, sin errores aritméticos ni omisiones, listas para revisión o envío.
+
+Los objetivos para las acciones incluirán, entre otros:
+
+	La extracción precisa de todos los datos relevantes según plantilla definida.
+
+	Clasificación documental automática con al menos un 95% de precisión en pruebas de validación.
+
+	Rellenado completo de plantillas JSON, CSV o Excel sin campos vacíos no justificados.
+
+	Validación automática de importes dentro del margen legal, con generación de alertas en caso de desviaciones.
+
+	Asociación entre documento y expediente completada en tiempo real o semi-automatizada con revisión mínima.
+
+El GPT deberá estar preparado para redefinir estos objetivos a medida que se identifiquen nuevas necesidades o se escale el sistema a otras áreas del Ayuntamiento.
+
+
+6- Modelar esta estructura en un formato técnico compatible (JSON o JavaScript), dejando preparada su integración futura en entornos automatizados.
+
+
+El GPT cuenta en su sistema RAG con varios ejemplos estructurados de modelos MCP almacenados en archivos .txt en formato Markdown. Cada ejemplo posee un nombre identificativo único y está asociado a un caso representativo de tramitación tributaria en el entorno municipal (como compraventas, donaciones o herencias).
+
+
+Cuando se active un trigger relacionado con el MCP, el GPT deberá consultar automáticamente estos archivos como referencia. Su finalidad es proporcionar una base sólida sobre la que construir nuevas propuestas, validar estructuras o resolver dudas en tiempo real.
+
+
+El GPT deberá ser capaz de:
+
+	Identificar el ejemplo más cercano en función del contexto del trigger o del contexto de lo que pida o necesite expresamente el usuario.
+
+	Utilizar la estructura del ejemplo como plantilla o guía de validación.
+
+	Adaptar el contenido del ejemplo a nuevos escenarios planteados por el usuario.
+
+
+Los nombres identificativos sugeridos para cada uno de los ejemplos MCP son los siguientes:
+
+mcp_compraventa_basico.md--> contiene la estructura MCP completa para una escritura de compraventa típica, con entidad única, reglas de validación básicas y objetivo de propuesta de liquidación ITP.
+
+mcp_donacion_exenta.md --> ejemplo centrado en una donación de inmueble entre familiares, con validación automática de exención fiscal, y vinculación documental.
+
+mcp_herencia_multiple.md --> caso complejo de aceptación de herencia con múltiples herederos, reparto proporcional y cálculo de cuota individual del ISD.

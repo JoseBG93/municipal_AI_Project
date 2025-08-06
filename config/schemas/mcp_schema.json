@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Municipal Document Schema",
+  "description": "Esquema para validar documentos municipales notariales (escrituras, herencias, donaciones)",
+  "type": "object",
+  "required": [
+    "tipo_documento",
+    "fecha_documento",
+    "partes",
+    "inmueble",
+    "valor_transaccion"
+  ],
+  "properties": {
+    "tipo_documento": {
+      "type": "string",
+      "enum": ["compraventa", "herencia", "donacion", "permuta"]
+    },
+    "fecha_documento": {
+      "type": "string",
+      "format": "date"
+    },
+    "numero_protocolo": {
+      "type": "string"
+    },
+    "notario": {
+      "type": "object",
+      "properties": {
+        "nombre": {"type": "string"},
+        "colegiacion": {"type": "string"}
+      }
+    },
+    "partes": {
+      "type": "object",
+      "required": ["vendedor", "comprador"],
+      "properties": {
+        "vendedor": {
+          "type": "object",
+          "required": ["nombre", "dni"],
+          "properties": {
+            "nombre": {"type": "string"},
+            "dni": {"type": "string"},
+            "domicilio": {"type": "string"}
+          }
+        },
+        "comprador": {
+          "type": "object",
+          "required": ["nombre", "dni"],
+          "properties": {
+            "nombre": {"type": "string"},
+            "dni": {"type": "string"},
+            "domicilio": {"type": "string"}
+          }
+        }
+      }
+    },
+    "inmueble": {
+      "type": "object",
+      "required": ["direccion", "superficie", "tipo"],
+      "properties": {
+        "direccion": {"type": "string"},
+        "superficie": {"type": "number"},
+        "tipo": {
+          "type": "string",
+          "enum": ["vivienda", "local", "terreno", "oficina", "deposito"]
+        },
+        "padron": {"type": "string"},
+        "folio_real": {"type": "string"},
+        "zona": {"type": "string"}
+      }
+    },
+    "valor_transaccion": {
+      "type": "object",
+      "required": ["monto", "moneda"],
+      "properties": {
+        "monto": {"type": "number"},
+        "moneda": {
+          "type": "string",
+          "enum": ["UYU", "USD", "UI"]
+        }
+      }
+    },
+    "observaciones": {
+      "type": "string"
+    }
+  }
+} 

@@ -1,0 +1,26 @@
+---
+alwaysApply: true
+---
+DOCUMENTACIÓN LEGAL-COMPLIANCE COMPLETADA (5/13):
+✅ 01_Marco_Normativo_Completo.md (RGPD, AI Act, normativa europea/española, clasificación riesgos IA)
+✅ 02_Principios_Fundamentales_Aplicacion.md (principios RGPD/AI Act aplicados, checklist operativo)  
+✅ 03_Arquitectura_Tecnica_Conforme.md (arquitectura híbrida por sensibilidad datos, Docker Swarm conforme)
+✅ 04_Documentacion_Obligatoria.md (documentación legal obligatoria por RGPD/AI Act/ENS)
+✅ 05_Medidas_Tecnicas_Organizativas.md (87 medidas técnicas y organizativas específicas)
+
+PENDIENTES (8/13): 06_Derechos_Ciudadanos hasta 13_Formacion_Obligatoria
+
+ARQUITECTURA TÉCNICA ESTABLECIDA:
+- Docker Swarm híbrido: on-premise (datos críticos) + cloud UE (procesamiento medio)
+- PostgreSQL cluster con cifrado AES-256-GCM para datos tributarios
+- Redis para sesiones con cifrado y replicación
+- Microservicios: document_processor, tax_calculator, web_interface, integration_layer
+- Redes overlay cifradas IPSec + certificados mTLS
+- Supervisión humana obligatoria en decisiones automatizadas
+
+ESTADO DEL DESARROLLO:
+- Entorno base configurado y funcional
+- Estructura modular operativa en apps/
+- Scripts de utilidades y testing implementados
+- Datos sintéticos de prueba generados
+- Próximo: Instalación dependencias reales + implementación módulos OCR
