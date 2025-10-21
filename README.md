@@ -128,6 +128,125 @@ municipal-ai-system/
 └── docs/                # Documentación técnica
 ```
 
+📁 municipal-ai-system/            # PROYECTO 2: Sistema Municipal IA
+│   ├── 📁 document-processor/         # Microservicio procesamiento documentos
+│   │   ├── 📁 src/
+│   │   │   ├── main.py                # FastAPI para OCR/NLP
+│   │   │   ├── models/
+│   │   │   │   ├── document.py        # Modelo Document
+│   │   │   │   ├── extraction.py      # Modelos extracción datos
+│   │   │   │   └── validation.py      # Modelos validación
+│   │   │   ├── services/
+│   │   │   │   ├── ocr_service.py     # Tesseract + PDF processing
+│   │   │   │   ├── nlp_service.py     # spaCy + Custom NER
+│   │   │   │   ├── extraction_service.py  # Extracción estructurada
+│   │   │   │   └── validation_service.py  # Validación datos
+│   │   │   ├── ai_models/
+│   │   │   │   ├── document_classifier.py
+│   │   │   │   ├── entity_extractor.py
+│   │   │   │   └── fine_tuned_models/
+│   │   │   └── utils/
+│   │   │       ├── pdf_handler.py
+│   │   │       ├── text_cleaner.py
+│   │   │       └── data_validator.py
+│   │   ├── 📁 training/               # Entrenamiento modelos IA
+│   │   │   ├── 📁 datasets/
+│   │   │   │   ├── raw_documents/     # PDFs originales
+│   │   │   │   ├── labeled_data/      # Datos etiquetados
+│   │   │   │   └── processed/         # Datos procesados
+│   │   │   ├── 📁 notebooks/          # Jupyter notebooks
+│   │   │   │   ├── data_exploration.ipynb
+│   │   │   │   ├── model_training.ipynb
+│   │   │   │   └── evaluation.ipynb
+│   │   │   ├── 📁 scripts/
+│   │   │   │   ├── prepare_dataset.py
+│   │   │   │   ├── train_ner.py
+│   │   │   │   └── evaluate_model.py
+│   │   │   └── 📁 configs/
+│   │   │       ├── spacy_config.cfg
+│   │   │       └── training_params.json
+│   │   ├── 📁 tests/
+│   │   └── 📋 requirements.txt
+│   │
+│   ├── 📁 tax-calculator/             # Microservicio cálculo impuestos
+│   │   ├── 📁 src/
+│   │   │   ├── main.py
+│   │   │   ├── models/
+│   │   │   │   ├── property.py        # Modelo Inmueble
+│   │   │   │   ├── tax_calculation.py # Modelo Cálculo
+│   │   │   │   └── regulations.py     # Modelo Normativas
+│   │   │   ├── services/
+│   │   │   │   ├── tax_service.py     # Lógica cálculo
+│   │   │   │   ├── rules_engine.py    # Motor reglas
+│   │   │   │   └── report_service.py  # Generación informes
+│   │   │   └── utils/
+│   │   │       ├── calculations.py
+│   │   │       └── validators.py
+│   │   ├── 📁 regulations/            # Base de datos normativa
+│   │   │   ├── municipal_rates.json
+│   │   │   ├── state_regulations.json
+│   │   │   └── tax_formulas.py
+│   │   └── 📁 tests/
+│   │
+│   ├── 📁 web-interface/              # Django admin interface
+│   │   ├── 📁 municipal_admin/
+│   │   │   ├── settings.py
+│   │   │   ├── urls.py
+│   │   │   └── wsgi.py
+│   │   ├── 📁 apps/
+│   │   │   ├── documents/             # App gestión documentos
+│   │   │   ├── taxes/                 # App gestión impuestos
+│   │   │   ├── reports/               # App informes
+│   │   │   └── integration/           # App integración sistemas
+│   │   ├── 📁 templates/
+│   │   ├── 📁 static/
+│   │   └── 📋 requirements.txt
+│   │
+│   ├── 📁 database/
+│   │   ├── 📁 migrations/
+│   │   ├── 📁 seeds/
+│   │   │   ├── alfafar_regulations.sql
+│   │   │   └── sample_documents.sql
+│   │   └── schema.sql
+│   │
+│   ├── 📁 integration/                # Integración sistemas municipales
+│   │   ├── 📁 api_connectors/
+│   │   │   ├── catastro_connector.py
+│   │   │   ├── registro_connector.py
+│   │   │   └── hacienda_connector.py
+│   │   └── 📁 data_sync/
+│   │
+│   ├── 📁 deployment/
+│   │   ├── 🐳 docker-compose.yml
+│   │   ├── ☸️ kubernetes/
+│   │   │   ├── document-processor.yaml
+│   │   │   ├── tax-calculator.yaml
+│   │   │   └── web-interface.yaml
+│   │   └── 🔧 terraform/
+│   │       ├── gcp_infrastructure.tf
+│   │       └── database.tf
+│   │
+│   └── 📁 docs/
+│       ├── ARCHITECTURE.md
+│       ├── API_DOCUMENTATION.md
+│       ├── DEPLOYMENT_GUIDE.md
+│       ├── USER_MANUAL.md
+│       └── INTEGRATION_GUIDE.md
+│
+└── 📁 shared-resources/               # Recursos compartidos
+    ├── 📁 templates/
+    │   ├── fastapi_template/
+    │   ├── django_template/
+    │   └── docker_templates/
+    ├── 📁 utils/
+    │   ├── common_validators.py
+    │   ├── logging_config.py
+    │   └── environment_manager.py
+    └── 📁 docs/
+        ├── CODING_STANDARDS.md
+        ├── GIT_WORKFLOW.md
+        └── LEARNING_RESOURCES.md
+
 ## 🏃‍♂️ Cómo Ejecutar (Desarrollo)
 
 ### Con Docker Compose
